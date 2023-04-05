@@ -1,0 +1,22 @@
+{
+  "name": "@kirito_qhx/mo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx only-allow pnpm",
+    "build": "pnpm --filter=@kirito_qhx/* run build",
+    "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "father-build": "^1.22.5",
+    "js-base64": "^3.7.5"
+  }
+}
